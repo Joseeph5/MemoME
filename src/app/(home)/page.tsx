@@ -1,4 +1,6 @@
+import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -17,7 +19,14 @@ export default function Home() {
         <p className='text-2xl font-medium max-w-[600px]'>
           Use MemoMe to practice coding!
         </p>
-        <div className='mt-10 space-x-3'>ssss</div>
+        <div className='mt-10 space-x-3'>
+          <Button asChild>
+            <Link href='/signup'>Get started</Link>
+          </Button>
+          <Button asChild variant='secondary'>
+            <Link href='/login'>Log in</Link>
+          </Button>
+        </div>
       </div>
     </main>
   );
