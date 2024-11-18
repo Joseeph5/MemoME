@@ -10,6 +10,7 @@ export default function Home() {
         alt='Preview of PetSoft'
         width={519}
         height={472}
+        className='rounded-2xl'
       />
       <div>
         <h1 className='text-5xl font-semibold my-6 max-w-[500px]'>
