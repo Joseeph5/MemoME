@@ -1,5 +1,8 @@
 import Branding from '@/components/Branding';
 import SearchForm from '@/components/SearchForm';
+import SnippetButton from '@/components/SnippetButton';
+import SnippetDetails from '@/components/SnippetDetails';
+import SnippetList from '@/components/SnippetList';
 import Stats from '@/components/Stats';
 import React from 'react';
 
@@ -15,10 +18,13 @@ export default function Page() {
           <SearchForm />
         </div>
         <div className='relative md:row-start-2 md:row-span-full md:col-start-1 md:col-span-1'>
-          Button
+          <SnippetList />
+          <div className='absolute bottom-4 right-4'>
+            <SnippetButton />
+          </div>
         </div>
         <div className='md:row-start-1 md:row-span-full md:col-start-2 md:col-span-full'>
-          Details
+          <SnippetDetails />
         </div>
       </div>
     </main>
